@@ -16,15 +16,15 @@ This embedded project utilizes AVR microcontrollers to create a distance measure
 - Buzzer
 
 #### Project Structure:
-#1. Application Layer (APP)
+1. Application Layer (APP)
   - **main.c**: The main application file that orchestrates the interaction between different modules and controls the overall system behavior.
     
-#2. Hardware Abstraction Layer (HAL)
+2. Hardware Abstraction Layer (HAL)
   - **LCD Driver**: Facilitates communication with the LCD display to numbers and results.
   - **ultrasonic.c/h**: Contains functions for initializing and controlling the ultrasonic sensor.
   - **buzzer.c/h**: Provides functionality for controlling the buzzer and generating audible feedback.
     
-#3. Microcontroller Abstraction Layer (MCAL)
+3. Microcontroller Abstraction Layer (MCAL)
   - **GPIO Driver**: Manages the MCU PINS and PORTS and the communcation between any external device.
   - **icu.c/h**: Implements the Input Capture Unit (ICU) driver for precise timing measurements.
   - **pwm.c/h**: Provides PWM signal generation for controlling the buzzer.
